@@ -1,0 +1,36 @@
+
+mission: Appropriate Development Technology, Inc. (ADT) is a nonprofit based in Houston, Texas on a mission to close the digital divide. Through technical training, we empower people, of all walks of life, to better their lives. Inside our Internet Learning Centers and Maker Spaces, we introduce emerging technologies and learning resources for career advancement. We believe that knowledge and skill development will open professional opportunities and a path to financial security.
+
+history_pt1: "In August 1999, ADTinc opened its first Internet Training Center in an economically depressed section of Southwest Houston with the help of Stanford Alexander (Chairman, Weingarten Realty Investors), former Mayor Lee Brown and the late Ben Love (Chairman, Texas Commerce Bank). The immense community demand later resulted in the creation of four new computer literacy training sites across Houston.  Those locations include:" 
+
+history_pt2: 
+    - the Refugee Alliance Center, which works with immigrants and other low-income, at-risk client populations 
+    - the Medhane Alem Church, a place of worship established by Orthodox Ethiopians 
+    - East End Center for individuals with disabilities 
+    - a site jointly operated by ADTINC, the Alief School District, and Communities-in-Schools. 
+
+history_pt3: The fourth listed satellite program is particularly significant – the local school District had determined that although their elementary and secondary grade students were making impressive strides towards computer literacy, the parents of these children often had few technology skills to speak of.  Accordingly, ADTINC decided to create an inter-generational environment where children and parents could master technology together.
+
+resources_blurb: "Want to learn more about technology? Check out the following free resources:"
+
+resources_list:
+    - name: Khan Academy
+      url: https://www.khanacademy.org/
+      description: Khan Academy offers free courses taught using a 'youtube video' style on subjects including math, science, programming, test prep for college entrance exams, economics, as well as the arts and humanities. 
+    - name: Code.org
+      url: https://code.org/
+      description: Code.org provides a fun, interactive way for school-aged students to learn to code. Their 'Hour of Code' library includes hour-long tutorials designed for all experience levels giving hands-on practice with languages like Blocks, Scratch, JavaScript, Python, and Java.
+    - name: Codecademy
+      url: https://www.codecademy.com/
+      description: Codeacademy also offers interactive courses that covers languages that include HTML, CSS, JavaScript, Ruby, Python and many more. These courses provide an excellent way for students to familiarize with themselves with programming fundamentals and the syntax of specific programming languages. 
+    - name: Coursera
+      url: https://www.coursera.org/
+      description: Coursera offers a multitude of free online courses taught by prestigious universities in subjects such as Computer Science, Data Science, Finance, and more. 
+      
+team:
+    - name: Dula Abdu, Co-founder
+      description: As one of ADTinc’s founders, Dula has dedicated tremendous effort to bridge digital and income inequality. Under Mr. Abdu’s leadership, ADTinc has trained over 800 economically disadvantaged Houston residents.  Before his current voluntary position with the organization, Dula worked at JPMorgan Chase in various capacities including as a financial analyst, and manager.  He has also taught at various universities including Jackson State University, University of Houston (Central) San Jacinto College, Houston Community College, and Texas Sothern University.  Dula has for many years been a distinguished civil servant, having sat on the Board of Directors of the Texas Workforce Commission as well as the Five Corners Management District serving the Hiram Clarke area.  Based on this sterling track record of community service, Dula has been featured in the Houston Chronicle and other newspapers.  His charitable activities include promoting economic development in Ethiopia, where he has started a microfinance, technology and water drilling projects.
+    - name: Member 1
+      description:
+    - name: Member 2
+    

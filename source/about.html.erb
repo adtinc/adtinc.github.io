@@ -1,0 +1,25 @@
+<div class="container-fluid resources">
+  
+    <h2>About us</h2>
+    <p><%= data.content.history_pt1 %></p>
+    
+    <ul>
+      <% data.content.history_pt2.each do |f| %>
+      <li><%= f %></li>
+      <% end %>
+    </ul>  
+    
+    <p><%= data.content.history_pt3 %></p>
+    
+    <h3>Meet the team</h3>
+    
+    <ul>
+    <% data.content.team.each do |m| %>  
+      <li> <h4> <%= m.name %> </h4> </li> 
+      <p> <%= m.description %> </p>
+    <% end %>
+    </ul>
+    
+     
+
+</div>

@@ -1,0 +1,14 @@
+<div class="container-fluid resources">
+    <h2>Learning Resources</h2>
+    
+    <p><%= data.content.resources_blurb %></p>
+    
+    <ul>
+        <% data.content.resources_list.each do |rl| %>
+            <li> <a href="<%= rl.url %>"><%= rl.name %></a>
+            <p> <%= rl.description %> </p>
+        </li>    
+        <% end %>
+    </ul>
+    
+</div>

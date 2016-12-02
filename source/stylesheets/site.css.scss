@@ -1,0 +1,236 @@
+ /*Fonts*/
+body {
+  /* minor, but indenting here consistently with the rest of stylesheet will help with the readability */
+      font-family: 'Rubik', sans-serif;
+      font-size: 18px;
+      line-height: 1.6em;
+      font-weight: 300;
+      letter-spacing: 1px;
+      background: url("../images/adt2.jpg") no-repeat center;
+      /* Not really a problem but it's common to capitalize the letters in the hex colors, i.e. #3399FF here. */
+      background-color: #3399FF;
+      background-blend-mode: multiply;
+      background-size: cover;
+      background-attachment: fixed;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Roboto Slab', serif;
+    }
+
+    /*Top Navigation*/
+    .navbar {
+        margin-bottom: 0;
+    }
+    
+    .navbar-default {
+        background: rgba(0, 0, 0, 0.7);
+        border-color: rgba(0, 0, 0, 0.7);
+    }
+  
+  /* Maybe this was a selector I copy and pasted in, but generally, it's helps with readbility to space this out like this:
+     .nav > li > a
+    This applies to the .navbar-default .navbar-nav > li > a stuffs as well.
+    Indentation here should also be consistent.
+  */
+    .nav > li > a {
+      /* Good use of text-transform here!  :) */
+        text-transform: uppercase;
+        display: inline-block;
+        padding-top: 20px;
+        padding-bottom: 10px;
+      }
+  
+    .navbar-default .navbar-nav > li > a:hover {
+        color: #FFCE3A;
+    }
+    
+    .navbar-default .navbar-nav > li > a {
+        color: #FFF;
+    }
+    
+    .navbar-brand {
+        padding: 0;
+    }
+  
+    .navbar-brand img {
+        max-width: 85%;
+        float: left;
+        margin-top: 5px;
+        margin-left: 5px;
+        padding: 5px;
+    }
+
+    .fa-gift {
+        color: #FFF;
+        margin: 20px 20px 0 0;
+    }
+    
+    /*Jumbotron*/
+    
+    .jumbotron {
+        max-width: 100%;
+        max-height: 100%;
+        padding: 70px;
+        margin-bottom: 0;
+        background: transparent;
+    }
+    
+    .heading {
+        margin-left: auto;
+        text-align: center;
+        width: 450px;
+        height: 450px;
+        border-radius: 50%;
+        background: #FFCE3A;
+    }
+    
+    .heading h1 {
+        padding: 60px 50px 30px 30px;
+    }
+    
+    h1 .emphasis {
+        font-weight: bold;
+    }
+  
+  /*Mission Statement*/
+  
+  .mission {
+    margin: 10px 0 30px 0;
+    padding: 20px 0 40px 0;
+    background: #FFFFFF;
+  }
+
+  .mission h2,
+  .resources h2 {
+    text-align: center;
+    font-size: 60px;
+    margin-bottom: 10px;
+  }
+
+  .mission p {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /*Additional content: who we are etc*/
+
+  .boxes {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    
+  }
+ 
+   .notable-content {
+    margin: 30px 0 30px 0;
+  }
+  
+  .notable-content h3 {
+    padding-top: 70px;
+    text-align: center;
+    background-color: #FFCE3A;
+    color: #333;
+    height: 200px;
+    font-size: 40px;
+    text-transform: uppercase;
+    width: 90%;
+  }
+  
+  .notable-content a:hover {
+    text-decoration: none;
+  }
+
+  
+  /*Calendar*/
+  
+  .calendar {
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 40px;
+    background-color: #fff;
+  }
+  
+  .calendar h3 {
+    font-size: 35px;
+    padding: 20px;
+    text-transform: uppercase;
+    word-spacing: 15px;
+  }
+  
+  .calendar li {
+    list-style-type: none;
+  }
+
+
+  /*Footer*/
+  
+  .footer {
+    margin-top: 10%;
+    text-align: center;
+  }
+  
+  .footer li {
+    display: inline;
+    padding-left: 30px;
+  }
+  
+  .footer .fa-3 {
+    font-size: 40px;
+    color: #fff;
+  }
+
+  /*CSS effect: hover grow*/
+  
+  /* Grow */
+  .hvr-grow {
+      display: block;
+      vertical-align: middle;
+      transform: translateZ(0);
+      box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+      backface-visibility: hidden;
+      -moz-osx-font-smoothing: grayscale;
+      transition-duration: 0.3s;
+      transition-property: transform;
+  }
+  
+  .hvr-grow:hover,
+  .hvr-grow:focus,
+  .hvr-grow:active {
+      transform: scale(1.1);
+  }
+  
+  
+  /*Resources page styling*/
+  
+  .resources {
+    margin-top: 10%;
+    width: 80%;
+    background: #FFFFFF;
+    padding: 50px;
+  }
+  
+/*Join Us page styling*/
+
+.volunteer-form {
+  margin-top: 10%;
+  margin-left: 8%;
+}
+
+/*Error page styling*/
+.error {
+  margin-top: 10%;
+  width: 70%;
+  background: #FFFFFF;
+  padding: 50px;
+}
+
+.error p, h2 {
+  text-align: center;
+  padding: 25px;
+}
+
+.error img {
+  margin-left: auto;
+  margin-right: auto;
+}
