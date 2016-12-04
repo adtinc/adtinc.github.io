@@ -5,11 +5,32 @@
     <p><%= data.content.mission %></p>
 </section>
 
-<section >
-    <%= partial "/partials/boxes" %>
-</section>
-
-<aside class="calendar">
+ <section class="content">
+          <div class="row">
+            
+            <div class="col-md-4 notable-content">
+              <a class="hvr-grow" href="about.html">
+                <h3>Who we are <i class="fa fa-question-circle" aria-hidden="true"></i></h3>
+                
+              </a>
+            </div>
+            
+            <div class="col-md-4 notable-content">
+              <a class="hvr-grow" href="news.html">
+                <h3>What we do <i class="fa fa-users" aria-hidden="true"></i></h3>
+              </a>
+            </div>
+            
+            <div class="col-md-4 notable-content">
+              <a class="hvr-grow" href="volunteer.html">
+                <h3>Join us <i class="fa fa-smile-o" aria-hidden="true"></i></h3>
+              </a>
+            </div>
+            
+          </div>
+       </section> 
+       
+<aside class="lpevents">
     <h3>Upcoming Events <i class="fa fa-calendar" aria-hidden="true"></i> </h3>
       <ul id="events-upcoming"></ul>
 </aside>
