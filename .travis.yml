@@ -1,0 +1,7 @@
+env:
+  global:
+  - ENCRYPTION_LABEL: "ff7fb245db2c"
+  - COMMIT_AUTHOR_EMAIL: "pandafulmanda@gmail.com"
+
+script:
+  - ./bin/deploy.sh
