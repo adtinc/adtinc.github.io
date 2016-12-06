@@ -31,6 +31,6 @@
   <body class="<%= page_classes %>">
     <%= yield %>
     <%= partial "partials/footer" %>
-    <script src="javascripts/all.js"></script>
+    <script src="<%= config.site_url %>/javascripts/all.js"></script>
   </body>
 </html>
