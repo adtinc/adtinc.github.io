@@ -40,7 +40,7 @@ configure :build do
   activate :directory_indexes
   set :relative_links, true
 
-  set :site_url, '/'
+  set :site_url, 'https://adtinc.github.io/'
   # Minify CSS on build
   activate :minify_css
 
