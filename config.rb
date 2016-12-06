@@ -38,9 +38,10 @@ end
 configure :build do
   #Pretty URLS
   activate :directory_indexes
+  set :relative_links, true
   # Minify CSS on build
-  # activate :minify_css
+  activate :minify_css
 
   # Minify Javascript on build
-  # activate :minify_javascript
+  activate :minify_javascript
 end
