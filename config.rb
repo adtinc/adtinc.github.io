@@ -39,6 +39,8 @@ configure :build do
   #Pretty URLS
   activate :directory_indexes
   set :relative_links, true
+
+  set :site_url, '/adt_website'
   # Minify CSS on build
   activate :minify_css
 
