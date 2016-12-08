@@ -61,7 +61,7 @@ doCompile
 # Commit the "changes", i.e. the new version.
 # The delta will show diffs between new and old versions.
 git add build
-git commit -m "Deploy to GitHub Pages: ${SHA}"
+git commit -m "Deploy to GitHub Pages: ${SHA}, [skip ci]"
 
 # Now that we're all set up, we can push.
 git subtree push --squash --prefix build $SSH_REPO $TARGET_BRANCH
