@@ -1,6 +1,6 @@
 env:
   global:
-  - ENCRYPTION_LABEL: "ff7fb245db2c"
+  - ENCRYPTION_LABEL: "9672518d0161"
   - COMMIT_AUTHOR_EMAIL: "pandafulmanda@gmail.com"
 
 script:

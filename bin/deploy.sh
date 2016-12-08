@@ -1,8 +1,11 @@
 #!/bin/bash
+
+# based on https://gist.github.com/domenic/ec8b0fc8ab45f39403dd
+
 set -e # Exit with nonzero exit code if anything fails
 
-SOURCE_BRANCH="master"
-TARGET_BRANCH="gh-pages"
+SOURCE_BRANCH="dev"
+TARGET_BRANCH="master"
 
 function doCompile {
   ./bin/build.sh
@@ -29,10 +32,10 @@ ENCRYPTED_KEY_VAR="encrypted_${ENCRYPTION_LABEL}_key"
 ENCRYPTED_IV_VAR="encrypted_${ENCRYPTION_LABEL}_iv"
 ENCRYPTED_KEY=${!ENCRYPTED_KEY_VAR}
 ENCRYPTED_IV=${!ENCRYPTED_IV_VAR}
-openssl aes-256-cbc -K $ENCRYPTED_KEY -iv $ENCRYPTED_IV -in intro-to-r-deploy.enc -out intro-to-r-deploy -d
-chmod 600 intro-to-r-deploy
+openssl aes-256-cbc -K $ENCRYPTED_KEY -iv $ENCRYPTED_IV -in deploy_key.enc -out deploy_key -d
+chmod 600 deploy_key
 eval `ssh-agent -s`
-ssh-add intro-to-r-deploy
+ssh-add deploy_key
 
 # Clone the existing gh-pages for this repo into out/
 # Create a new empty branch if gh-pages doesn't exist yet (should only happen on first deply)
@@ -41,10 +44,10 @@ cd out
 
 # set up for git subtree deploy
 git checkout -b $TARGET_BRANCH
-sed -i -- '/_book/d' .gitignore
+sed -i -- '/build/d' .gitignore
 git add .gitignore
 git commit -m 'allow dist files'
-git subtree add --squash --prefix _book $SSH_REPO $TARGET_BRANCH
+git subtree add --squash --prefix build $SSH_REPO $TARGET_BRANCH
 
 # Run our compile script
 doCompile
@@ -57,8 +60,8 @@ doCompile
 
 # Commit the "changes", i.e. the new version.
 # The delta will show diffs between new and old versions.
-git add _book
+git add build
 git commit -m "Deploy to GitHub Pages: ${SHA}"
 
 # Now that we're all set up, we can push.
-git subtree push --squash --prefix _book $SSH_REPO $TARGET_BRANCH
+git subtree push --squash --prefix build $SSH_REPO $TARGET_BRANCH
