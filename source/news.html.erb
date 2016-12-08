@@ -1,27 +1,11 @@
 <div class="container-fluid resources">
     <h2>News</h2>
-    <%= lorem.sentences 5 %>
-    <section class="boxes">
-          <div class="row">
-            
-            <div class="col-md-4 notable-content">
-              <a class="hvr-grow" href="#">
-                <h3></h3>
-              </a>
-            </div>
-            
-            <div class="col-md-4 notable-content">
-              <a class="hvr-grow" href="#">
-                <h3></h3>
-              </a>
-            </div>
-            
-            <div class="col-md-4 notable-content">
-              <a class="hvr-grow" href="#">
-                <h3></h3>
-              </a>
-            </div>
-            
-          </div>
-       </section> 
+    <p><%= lorem.sentences 3 %></p>
+    
+     &nbsp; 
+     <ul>
+      <li><%= link_to 'Bridge the Digital Divide', '/adt_news1.pdf' %></li>
+      <li><%= link_to 'Front Page Article from the Houston Chronicle', '/adt_news2.pdf' %></li>
+      <li><%= link_to 'ADTinc Mission in Action', '/adt_news3.pdf' %></li>
+    </ul>
 </div>
