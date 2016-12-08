@@ -67,7 +67,7 @@ body {
     .jumbotron {
         max-width: 100%;
         max-height: 100%;
-        padding: 70px;
+        padding: 70px 70px 80px 70px;
         margin-bottom: 0;
         background: transparent;
     }
@@ -82,7 +82,7 @@ body {
     }
     
     .heading h1 {
-        padding: 60px 50px 30px 30px;
+        padding: 80px 20px;
     }
     
     h1 .emphasis {
@@ -91,8 +91,7 @@ body {
   
   /*Mission Statement*/
   
-  .mission  {
-    margin: 10px 0 30px 0;
+  .mission {
     padding: 20px 0 40px 0;
     background: #FFFFFF;
   }
@@ -123,9 +122,8 @@ body {
     
   }
  
-   .notable-content {
-    margin: 20px 0px 45px 0;
-    
+  .notable-content {
+    margin: 30px 0 30px 0;
   }
   
   .notable-content h3 {
@@ -137,13 +135,19 @@ body {
     font-size: 35px;
     text-transform: uppercase;
     width: 90%;
+    margin: 0 auto;
   }
   
   .notable-content a:hover {
     text-decoration: none;
   }
 
-  
+  .index .content {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    overflow: hidden;
+  }
+
   /*Events on landing page*/
   
   .lpevents {
