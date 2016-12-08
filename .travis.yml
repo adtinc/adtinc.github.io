@@ -1,3 +1,6 @@
+language: ruby
+rvm:
+  - 2.3.1
 env:
   global:
   - ENCRYPTION_LABEL: "9672518d0161"
