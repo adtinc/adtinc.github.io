@@ -1,7 +1,7 @@
 language: ruby
 rvm:
   - 2.3.1
-install: gem install middleman
+bundler_args: --without development
 env:
   global:
   - ENCRYPTION_LABEL: "9672518d0161"
