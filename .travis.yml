@@ -1,0 +1,11 @@
+language: ruby
+rvm:
+  - 2.3.1
+bundler_args: --without development
+env:
+  global:
+  - ENCRYPTION_LABEL: "9672518d0161"
+  - COMMIT_AUTHOR_EMAIL: "pandafulmanda@gmail.com"
+
+script:
+  - ./bin/deploy.sh
