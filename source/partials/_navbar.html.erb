@@ -9,23 +9,22 @@
               <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="<%= config.site_url %>">
-              <img alt="ADT Logo" src="https://cdn.hyperdev.com/e892164b-b35f-485b-a7f6-00df27e793e3%2Fadt-inc-logo.png">
+              <img alt="ADT Logo" src="<%= config.site_url %>images/adt-inc-logo.png">
             </a>
           </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-left">
-              <li><a href="<%= config.site_url %>about">About</a></li>
-              <li><a href="<%= config.site_url %>volunteer">Join Us</a></li>
-              <li><a href="<%= config.site_url %>calendar">Events</a></li>
-              <li><a href="<%= config.site_url %>news">News</a></li>
-              <li><a href="<%= config.site_url %>learning">Resources</a></li>
+              <li><a class="nav-about" href="<%= config.site_url %>about">About</a></li>
+              <li><a class="nav-volunteer" href="<%= config.site_url %>volunteer">Join Us</a></li>
+              <li><a class="nav-calendar" href="<%= config.site_url %>calendar">Events</a></li>
+              <li><a class="nav-news" href="<%= config.site_url %>news">News</a></li>
+              <li><a class="nav-learning" href="<%= config.site_url %>learning">Resources</a></li>
       </ul>
       
          <ul class="nav navbar-nav navbar-right">
-              <li><a href="donate">Donate</a></li>
-              <li><i class="fa fa-gift" aria-hidden="true"></i></li>
+              <li><a href="donate">Donate <i class="fa fa-gift" aria-hidden="true"></i></a></li>
          </ul>
          
     </div><!-- /.navbar-collapse -->
