@@ -155,7 +155,7 @@ var formatGoogleCalendar = (function() {
             } else if (format[i] === '*description*') {
                 output = output.concat('<span class="description">' + description + '</span>');
             } else if (format[i] === '*location*') {
-                output = output.concat('<a href="https://www.google.com/maps/dir/' + location + '" target ="_blank"><span class="location">' + location + '</span></a>');
+                output = output.concat('<a href="https://www.google.com/maps/dir/' + location + '" target ="_blank"><span class="location">' + location.split(',')[0] + '</span></a>');
             } else {
                 if ((format[i + 1] === '*location*' && location !== '') ||
                     (format[i + 1] === '*summary*' && summary !== '') ||
