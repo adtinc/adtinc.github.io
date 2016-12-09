@@ -94,7 +94,7 @@ body {
   
   /*Mission Statement*/
   
-  .mission {
+  .mission  {
     margin: 10px 0 30px 0;
     padding: 20px 0 40px 0;
     background: #FFFFFF;
@@ -115,15 +115,20 @@ body {
   
   /*Additional content: who we are etc*/
 
+.content {
+  margin-left: 40px;
+}
+
   .boxes {
-    width: 95%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     
   }
  
    .notable-content {
-    margin: 30px 0 30px 0;
+    margin: 20px 0px 45px 0;
+    
   }
   
   .notable-content h3 {
@@ -132,7 +137,7 @@ body {
     background-color: #FFCE3A;
     color: #333;
     height: 200px;
-    font-size: 40px;
+    font-size: 35px;
     text-transform: uppercase;
     width: 90%;
   }

@@ -11,11 +11,11 @@
     
     <p><%= data.content.history_pt3 %></p>
     
-    <h3>Meet the team</h3>
+    <h2>Meet the team</h2>
     
     <ul>
     <% data.content.team.each do |m| %>  
-      <li> <h4> <%= m.name %> </h4> </li> 
+      <h3> <%= m.name %> </h3>  
       <p> <%= m.description %> </p>
     <% end %>
     </ul>
