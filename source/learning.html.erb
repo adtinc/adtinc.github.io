@@ -5,7 +5,7 @@
     
     <ul>
         <% data.content.resources_list.each do |rl| %>
-            <li> <a href="<%= rl.url %>"><%= rl.name %></a>
+            <li> <h3><a href="<%= rl.url %>"><%= rl.name %></a></h3>
             <p> <%= rl.description %> </p>
         </li>    
         <% end %>
