@@ -12,13 +12,19 @@
     <p><%= data.content.history_pt3 %></p>
     
     <h2>Meet the team</h2>
+    &nbsp;
     
-    <ul>
-    <% data.content.team.each do |m| %>  
-      <h3> <%= m.name %> </h3>  
-      <p> <%= m.description %> </p>
-    <% end %>
-    </ul>
+    <div class="team-bio">
+      
+      <img src="../images/dula_photo.jpg" alt="Photo of Dula Abdu" class="img-responsive dula">
+      &nbsp;
+      <ul>
+      <% data.content.team.each do |m| %>  
+        <h3 class="bio"> <%= m.name %> </h3>  
+        <p> <%= m.description %> </p>
+      <% end %>
+      </ul>
+    </div>  
     
      
 
