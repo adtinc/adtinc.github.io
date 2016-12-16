@@ -1,11 +1,30 @@
 <div class="container-fluid resources">
     <h2>News</h2>
-    <p><%= lorem.sentences 3 %></p>
-    
-     &nbsp; 
+    <p><%= data.content.newsblurb %></p>
+
+     <h3>News Articles</h3>
+     
      <ul>
       <li><%= link_to 'Bridge the Digital Divide', '/adt_news1.pdf' %></li>
       <li><%= link_to 'Front Page Article from the Houston Chronicle', '/adt_news2.pdf' %></li>
       <li><%= link_to 'ADTinc Mission in Action', '/adt_news3.pdf' %></li>
     </ul>
+    
+    <h3>Photos from first camp event</h3>
+    &nbsp;
+    <div class="row">
+     
+     <div class="col-md-3">
+      <img src="../images/drone.jpg" alt="instructor showing drone" class="img-responsive">
+     </div>
+      
+     <div class="col-md-3">
+      <img src="../images/mayor.jpg" alt="mayor Turner and campers" class="img-responsive">
+     </div>
+     
+     <div class="col-md-3">
+      <img src="../images/summercamp.jpg" alt="campers participating in an activity" class="img-responsive">
+     </div>
+     
+     </div>
 </div>
