@@ -30,7 +30,9 @@ resources_list:
 team:
     - name: Dula Abdu, Co-founder
       description: As one of ADTinc’s founders, Dula has dedicated tremendous effort to bridge digital and income inequality. Under Mr. Abdu’s leadership, ADTinc has trained over 800 economically disadvantaged Houston residents.  Before his current voluntary position with the organization, Dula worked at JPMorgan Chase in various capacities including as a financial analyst, and manager.  He has also taught at various universities including Jackson State University, University of Houston (Central) San Jacinto College, Houston Community College, and Texas Sothern University.  Dula has for many years been a distinguished civil servant, having sat on the Board of Directors of the Texas Workforce Commission as well as the Five Corners Management District serving the Hiram Clarke area.  Based on this sterling track record of community service, Dula has been featured in the Houston Chronicle and other newspapers.  His charitable activities include promoting economic development in Ethiopia, where he has started a microfinance, technology and water drilling projects.
-
+    - name: Robert
+      description: brilliant Trump like guy
+      
 donate_pt1: There is a massive opportunity gap between the children of the poor and the rich.  This gap prevents underpriveleged children from accessing path-changing programs in Science, Technology, Engineering and Mathematics (STEM). To bridge this gap, we offer STEM and vocational classes to create opportunities.
 
 donate_pt2: Public schools, especially in minority districts, are overwhelmed. Consequently, children from these districts are falling behind in STEM subjects where high paying jobs are being created.
