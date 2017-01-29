@@ -38,7 +38,7 @@ end
 
 # Build-specific configuration
 configure :build do
-  set :site_url, 'https://adtinc.github.io/'
+  set :site_url, '//www.adtechnical.org/'
   # Minify CSS on build
   activate :minify_css
 
