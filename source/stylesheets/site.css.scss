@@ -214,6 +214,15 @@ body {
   .hvr-grow:active {
       transform: scale(1.1);
   }
+
+/* Upcoming events */
+.lpevents object {
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  height: 960px;
+}
+
   
   
   /*Resources page styling*/
