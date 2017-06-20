@@ -11,6 +11,20 @@ history_pt2:
 
 history_pt3: The fourth listed satellite program is particularly significant – the local school District had determined that although their elementary and secondary grade students were making impressive strides towards computer literacy, the parents of these children often had few technology skills to speak of.  Accordingly, ADTINC decided to create an inter-generational environment where children and parents could master technology together.
 
+summer_2017_camp:
+    - name: Computer Programming Coding
+      date: July 1 &amp; 8, 10 AM - 4 PM
+      description: Coding (HTML, CSS, Java, WordPress) with Code.Org, Scratch, Khan Academy, Python, Cubetto, etc.
+    - name: 3D-Printing
+      date: July 15, 10 AM - 4 PM
+      description: 3D-Printing, Electronics, Raspberry Pi
+    - name: Drones and Social Media
+      date: July 22, 10 AM - 4 PM
+      description: Drone education, demonstration, flying, racing, aerial photography, building 3D printed drones, and social media/mobile marketing
+    - name: Financial Literacy
+      date: July 22, 10 AM - 4 PM
+      description: Budgeting, stock market, compound interest, investing for the future and retirement planning
+
 resources_blurb: "Want to learn more about technology? Check out the following free resources:"
 
 resources_list:

@@ -216,11 +216,32 @@ body {
   }
 
 /* Upcoming events */
-.lpevents object {
-  width: 100%;
-  max-width: 600px;
-  margin: auto;
-  height: 960px;
+
+.events-listing {
+  font-family: 'Roboto Slab';
+  margin: 3em auto;
+
+  li {
+    margin-bottom: 3em;
+  }
+
+  .about {
+    border-bottom: 1px solid #333;
+  }
+
+  .summary {
+    font-weight: 800;
+  }
+
+  .date {
+    float: right;
+    font-weight: 100;
+    font-style: italic;
+  }
+}
+
+#events-2017 {
+  text-align: left;
 }
 
   
@@ -282,7 +303,7 @@ body {
   margin-right: auto;
 }
 
-@each $page in about volunteer calendar news learning {
+@each $page in about volunteer register calendar news learning {
   .#{$page} {
     .navbar-default .navbar-nav > li > a {
       &.nav-#{$page} {

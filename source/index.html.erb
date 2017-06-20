@@ -28,12 +28,44 @@
   </div>
 </section> 
 
-<aside class="lpevents">
-  <h3>
-    Upcoming Events <i class="fa fa-calendar" aria-hidden="true"></i>
-  </h3>
-  <ul id="events-upcoming"></ul>
-  <object data="./pdfs/TechnologySummerCamp-2017.pdf" type="application/pdf">
-    <p>This browser does not support PDFs. Please download the PDF to view it: <a href="./pdfs/TechnologySummerCamp-2017.pdf">Download PDF</a>.</p>
-  </object>
+<aside class="lpevents container-fluid">
+  <div class="row">
+    <div class="col-md-12">
+      <h3>
+        Upcoming Events <i class="fa fa-calendar" aria-hidden="true"></i>
+      </h3>
+      <!-- <ul class="events-listing" id="events-upcoming"></ul> -->
+    </div>
+  </div>
+
+  <div class="row" id="events-2017">
+    <div class="col-md-6">
+      <h1>Technology Summer Camp</h1>
+      <p><i>Saturdays 10 AM - 4 PM, July 2017</i></p>
+      <p>At the Vinson Neighborhood Library</p>
+      <p>
+        <a href="./register" class="btn btn-lg btn-primary">Sign up!</a>
+      </p>
+      <div class="embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item" src="//www.google.com/maps/embed/v1/place?q=Vinson%20Neighborhood%20Library,%20Houston,%20Texas&zoom=17&key=AIzaSyBQ8G0XWgVvplGzlNy3BEfxPPsBepnU7zA">
+        </iframe>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <ul class="events-listing">
+        <% data.content.summer_2017_camp.each do |event| %>
+          <li>
+            <p class="about">
+              <span class="summary"><%= event.name %></span>
+              <span class="date"><%= event.date %></span>
+            </p>
+            <p class="description"><%= event.description %></p>
+          </li>
+        <% end %>
+      </ul>
+    </div>
+
+  </div>
+
 </aside>
