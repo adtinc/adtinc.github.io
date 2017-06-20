@@ -12,16 +12,15 @@
     <p><%= data.content.history_pt3 %></p>
     
     <h2>Meet the team</h2>
-    &nbsp;
     
     <div class="team-bio">
-      
-      <img src="../images/dula_photo.jpg" alt="Photo of Dula Abdu" class="img-responsive dula">
-      &nbsp;
       <ul>
-      <% data.content.team.each do |m| %>  
-        <h3 class="bio"> <%= m.name %> </h3>  
-        <p> <%= m.description %> </p>
+      <% data.content.team.each do |m| %>
+        <li>
+          <img src="../images/<%= m.image %>.jpg" alt="Photo of <%= m.name %>" class="img-responsive">
+          <h3 class="bio"> <%= m.name %> </h3>  
+          <p> <%= m.description %> </p>
+        </li>
       <% end %>
       </ul>
     </div>  

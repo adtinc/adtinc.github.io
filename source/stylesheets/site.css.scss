@@ -257,10 +257,18 @@ body {
   
 /*About us page styling*/
 
-.dula {
-  width: 20%;
-  margin-left: auto;
-  margin-right: auto;
+.team-bio {
+
+  ul {
+    list-style: none;
+  }
+
+  img {
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
 }
 
 /*What We Do page styling*/
