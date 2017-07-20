@@ -10,25 +10,13 @@ layout: "donate_layout"
     <p><%= data.content.donate_pt2 %></p>
     <p><%= data.content.donate_pt3 %></p>
     
-    &nbsp;
-    <div class="donate_button">
-        <a href="#_givealways|20" class="philantro-btn">Donate $20</a>
-        <a href="#_givealways|30" class="philantro-btn">Donate $30</a>
-        <a href="#_givealways" class="philantro-btn">Choose your amount</a>
-    </div>
+    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <input type="hidden" name="hosted_button_id" value="7N4RPY9GNNV3U">
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+    </form>
     
     <p>Contributions may qualify as a charitable deduction to the extent allowed by law. Appropriate Development Technology, Inc. is a 501(C) 3 tax-exempt organization. </p> 
     
 </div>
-
-<script>
-(function() {
-var ph = document.getElementsByTagName('script')[0];
-var URI = window.location.href;
-var s = document.createElement('script');
-s.type = "text/javascript"; s.async = true;
-s.src = "https://s3-us-west-2.amazonaws.com/philantro/pdf/philantro.js";
-window.options = { EIN: '000000000', Referrer: URI};
-ph.parentNode.insertBefore(s, ph);
-})();
-</script>
